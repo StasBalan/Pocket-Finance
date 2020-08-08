@@ -45,7 +45,7 @@ h1, h2, h3, p {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 46.30%;
+    /* width: 46.30%; */
     z-index: 1;
 }
 
@@ -287,6 +287,7 @@ button {
     font-size: 14px;
     line-height: 24px;
     color: var(--gray);
+    transition: all .25s linear;
 }
 
 .header nav .menu .menu__item:last-child {
@@ -294,6 +295,23 @@ button {
 }
 
 .menu__item:first-child::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: #1ED3EF;
+}
+
+.menu__item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #1ED3EF;
+    transition: all .25s linear;
+}
+
+.menu__item:hover::after {
     content: '';
     display: block;
     width: 12px;
@@ -737,10 +755,33 @@ button {
     }
 }
 
-@media screen and (max-width: 576px) {
-     .container {
-        width: 90% !important;
+@media screen and (max-width: 1160px) {
+    .container {
+        width: 90%;
     }
+
+    .side-line__left,
+    .side-line__right {
+        width: 324px;
+    }
+
+    .about-banking__wrapper {
+        margin-left: 50px;
+    }
+
+    .about-block__text {
+        width: 400px;
+    }
+
+    .about-build__wrapper {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /*  .container {
+        width: 90% !important;
+    } */
 
     .about-block__text  {
         width: 100%;
@@ -823,7 +864,7 @@ button {
     }
 
     .video-banner {
-        height: 200px;
+        height: 400px;
     }
 
     .side-line__left,
@@ -844,7 +885,7 @@ button {
     }
 
     .about-block__img {
-        width: 100%;
+        width: 50%;
         margin-left: 0;
         margin-top: 70px;
     }
@@ -1004,5 +1045,23 @@ button {
         width: 14px;
         height: 3px;
         background-color: #1ED3EF;
+    }
+}
+
+/* @media (max-height: 680px), screen and (orientation: portrait) { 
+    .banner {
+        padding: 184px 0;
+    }
+} */
+
+@media screen and (max-width: 560px) {
+    .about-block__img {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 70px;
+    }
+
+    .video-banner {
+        height: 200px;
     }
 }

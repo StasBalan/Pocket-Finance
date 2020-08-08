@@ -16,19 +16,23 @@ function applySliderControllerClients(item) {
           dots:true,
           nav: true,
           responsive: {
-              0: {
-                  items: 1,
-                  nav:false,
-              },
-              768: {
-                  items: 2,
-              },
-              1280: {
-                  items: 3,
-              },
-              1500: {
-                  items: 5,
-              },
+            0: {
+                items: 1,
+                nav:false,
+            },
+            768: {
+                items: 2,
+                nav:false,
+            },
+            1280: {
+                items: 3,
+            },
+            1500: {
+                items: 4,
+            },
+            1850: {
+              items: 5,
+            }
           },
           navText: DEFAULT_SLIDER_NAVIGATION_ITEMS
       });
