@@ -745,10 +745,6 @@ button {
     .owl-dots {
         margin-top: 50px;
     }
-
-    .footer {
-        position: relative;
-    }
 }
 
 @media screen and (max-width: 1160px) {
@@ -775,10 +771,6 @@ button {
 }
 
 @media screen and (max-width: 900px) {
-    /*  .container {
-        width: 90% !important;
-    } */
-
     .about-block__text  {
         width: 100%;
     } 
@@ -1041,6 +1033,10 @@ button {
         width: 14px;
         height: 3px;
         background-color: #1ED3EF;
+    }
+
+    .footer {
+        position: relative;
     }
 }
 
