@@ -325,10 +325,6 @@ button {
     border-radius: 2px;
 }
 
-.banner__inner {
-    padding-bottom: 330px;
-}
-
 .banner__title,
 .banner__subtitle {
     color: var(--primary);
