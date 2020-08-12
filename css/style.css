@@ -325,6 +325,10 @@ button {
     border-radius: 2px;
 }
 
+.banner__inner {
+    padding-bottom: 330px;
+}
+
 .banner__title,
 .banner__subtitle {
     color: var(--primary);
@@ -624,9 +628,14 @@ button {
 /*----------------------FOOTER---------------------*/
 /*-------------------------------------------------*/
 .footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: 44px 32px;
     background-color: #3F4857;
     box-shadow: 0px 12px 40px rgba(14, 54, 71, 0.48);
+    z-index: 10;
 }
 
 .footer__inner {
@@ -739,6 +748,10 @@ button {
 
     .owl-dots {
         margin-top: 50px;
+    }
+
+    .footer {
+        position: relative;
     }
 }
 
