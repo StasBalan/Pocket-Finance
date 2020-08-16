@@ -624,10 +624,6 @@ button {
 /*----------------------FOOTER---------------------*/
 /*-------------------------------------------------*/
 .footer {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding: 44px 32px;
     background-color: #3F4857;
     box-shadow: 0px 12px 40px rgba(14, 54, 71, 0.48);
@@ -667,6 +663,40 @@ button {
 
 .footer__link:hover {
     opacity: 1;
+}
+
+/*-------------------------------------------------*/
+/*---------------------JOIN BAR--------------------*/
+/*-------------------------------------------------*/
+.join-bar {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: var(--white);
+    z-index: 10;
+}
+
+.join-bar__text {
+    margin-right: 48px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8C7043;
+}
+
+.join-bar__button {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: var(--background-banner-button);
 }
 
 @media screen and (max-width: 1600px) {
@@ -1035,8 +1065,8 @@ button {
         background-color: #1ED3EF;
     }
 
-    .footer {
-        position: relative;
+    .join-bar {
+        display: none;
     }
 }
 
